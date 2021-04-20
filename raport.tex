@@ -7,6 +7,7 @@
 
 \usepackage{natbib}
 \usepackage{graphicx}
+\usepackage{polski}
 
 \begin{document}
 
@@ -47,7 +48,7 @@ Stworzyliśmy 4 modele statystycznych:
 
 Aby znaleźć jak najlepsze parametry skorzystaliśmy z random search. 
 
-Najlepsze wyniki otrzymał XGBoost, a zaraz za nim regresja logistyczna. Są to modele na poziomie accuracy ok. 0.984.
+Najlepsze wyniki otrzymał XGBoost, a zaraz za nim regresja logistyczna. Są to modele na poziomie accuracy ok. 0.984 i AUC nawet 0.998.
 
 Wyniki: (baseline jest to regresja logistyczna bez wykonania na niej random search)
 
@@ -56,7 +57,7 @@ Wyniki: (baseline jest to regresja logistyczna bez wykonania na niej random sear
 \includegraphics[width=5cm]{zdjecia/tabela.png}
 \end{figure}
 
-Sprawdziliśmy również jak skuteczne będą modele, jeśli usuniemy najbardziej skorelowana kolumnę z naszych danych. Okazuje się, że skuteczność modeli znacząco spada, bo aż o ok. 0.05.
+Sprawdziliśmy również jak skuteczne będą modele, jeśli usuniemy najbardziej skorelowana kolumnę z naszych danych. Okazuje się, że skuteczność modeli znacząco spada, bo aż o co najmniej 0.05, a AUC o ok. 0.02-0.04 w zależności od modelu. 
 
 \begin{figure}[!ht]
 \centering
