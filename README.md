@@ -1,2 +1,2 @@
-# WUM-2021-Projekty
-WUM 2021 Projekty
+# ML Projects
+Machine Learning Projects summer 2021
